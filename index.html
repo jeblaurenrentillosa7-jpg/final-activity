@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monkey & Banana Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="login-box">
+        <h1>🐵 Monkey & Banana Store 🍌</h1>
+
+        <form id="loginForm">
+            <input type="email" id="email" placeholder="Email" required>
+
+            <input type="password" id="password" placeholder="Password" required>
+
+            <button type="submit">Login</button>
+
+            <p id="message"></p>
+        </form>
+
+        <div class="demo-account">
+            <h3>Customer Account</h3>
+            <p>Email: user@example.com</p>
+            <p>Password: user123</p>
+        </div>
+    </div>
+</div>
+
+<script>
+const customer = {
+    email: "user@example.com",
+    password: "user123",
+    name: "Juan Dela Cruz"
+};
+
+document.getElementById("loginForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    let email = document.getElementById("email").value;
+    let password = document.getElementById("password").value;
+
+    if(email === customer.email && password === customer.password){
+        localStorage.setItem("customer", JSON.stringify(customer));
+        window.location.href = "profile.html";
+    }
+    else{
+        document.getElementById("message").innerHTML =
+        "❌ Invalid Email or Password";
+    }
+});
+</script>
+
+</body>
+</html>

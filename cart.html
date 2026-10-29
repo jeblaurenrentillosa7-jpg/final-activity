@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shopping Cart</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            background:#fff9e6;
+        }
+
+        /* Header */
+        header{
+            background:linear-gradient(135deg,#ff9800,#ffd54f);
+            color:white;
+            text-align:center;
+            padding:30px;
+        }
+
+        /* Navigation */
+        nav{
+            background:#ff9800;
+            text-align:center;
+            padding:15px;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:0 15px;
+            font-weight:bold;
+        }
+
+        nav a:hover{
+            color:black;
+        }
+
+        .container{
+            width:90%;
+            margin:auto;
+            padding:30px;
+        }
+
+        .cart-box{
+            background:white;
+            border-radius:15px;
+            padding:20px;
+            box-shadow:0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        h2{
+            color:#ff9800;
+            margin-bottom:20px;
+            text-align:center;
+        }
+
+        table{
+            width:100%;
+            border-collapse:collapse;
+            margin-bottom:20px;
+        }
+
+        table th{
+            background:#ff9800;
+            color:white;
+        }
+
+        table th,
+        table td{
+            padding:15px;
+            border:1px solid #ddd;
+            text-align:center;
+        }
+
+        .product-img{
+            width:70px;
+            height:70px;
+            border-radius:10px;
+            object-fit:cover;
+        }
+
+        .total{
+            text-align:right;
+            font-size:22px;
+            font-weight:bold;
+            color:#28a745;
+        }
+
+        .checkout-btn{
+            background:#ff9800;
+            color:white;
+            border:none;
+            padding:15px 30px;
+            border-radius:8px;
+            cursor:pointer;
+            font-size:16px;
+            display:block;
+            margin-left:auto;
+            margin-top:15px;
+        }
+
+        .checkout-btn:hover{
+            background:#e68900;
+        }
+
+        footer{
+            background:#ff9800;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:30px;
+        }
+
+        @media(max-width:768px){
+
+            table{
+                font-size:12px;
+            }
+
+            nav a{
+                display:block;
+                margin:10px 0;
+            }
+
+            .product-img{
+                width:50px;
+                height:50px;
+            }
+
+            .total{
+                text-align:center;
+            }
+
+            .checkout-btn{
+                width:100%;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🛒 Shopping Cart</h1>
+    <p>Review Your Selected Products</p>
+</header>
+
+<nav>
+    <a href="home.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="categories.html">Categories</a>
+    <a href="cart.html">Cart</a>
+    <a href="wishlist.html">Wishlist</a>
+    <a href="orders.html">My Orders</a>
+    <a href="profile.html">Profile</a>
+</nav>
+
+<div class="container">
+
+    <div class="cart-box">
+
+        <h2>Your Cart Items</h2>
+
+        <table>
+
+            <tr>
+                <th>Image</th>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+
+            <tr>
+                <td>
+                    <img src="https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=200"
+                    class="product-img">
+                </td>
+                <td>Golden Banana</td>
+                <td>2</td>
+                <td>₱240</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <img src="https://images.unsplash.com/photo-1621939514649-280e2ee25f60?w=200"
+                    class="product-img">
+                </td>
+                <td>Banana Chips</td>
+                <td>1</td>
+                <td>₱85</td>
+            </tr>
+
+        </table>
+
+        <div class="total">
+            Total Amount: ₱325
+        </div>
+
+        <button class="checkout-btn">
+            ✅ Proceed to Checkout
+        </button>
+
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 Monkey & Banana Store | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

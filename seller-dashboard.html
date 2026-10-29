@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Seller Dashboard</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            background:#fff9e6;
+        }
+
+        /* Header */
+        header{
+            background:linear-gradient(135deg,#ff9800,#ffd54f);
+            color:white;
+            text-align:center;
+            padding:40px;
+        }
+
+        header h1{
+            font-size:45px;
+        }
+
+        header p{
+            font-size:18px;
+        }
+
+        /* Navigation */
+        nav{
+            background:#ff9800;
+            text-align:center;
+            padding:15px;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:0 15px;
+            font-weight:bold;
+            transition:0.3s;
+        }
+
+        nav a:hover{
+            color:black;
+        }
+
+        /* Container */
+        .container{
+            width:90%;
+            margin:auto;
+            padding:30px;
+        }
+
+        h2{
+            text-align:center;
+            color:#ff9800;
+            margin-bottom:25px;
+        }
+
+        /* Dashboard Cards */
+        .dashboard-cards{
+            display:flex;
+            justify-content:center;
+            gap:25px;
+            flex-wrap:wrap;
+        }
+
+        .card{
+            width:280px;
+            background:white;
+            border-radius:15px;
+            padding:30px;
+            text-align:center;
+            box-shadow:0px 4px 15px rgba(0,0,0,0.15);
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-10px);
+        }
+
+        .card h3{
+            color:#ff9800;
+            margin-bottom:15px;
+        }
+
+        .value{
+            font-size:30px;
+            font-weight:bold;
+            color:green;
+        }
+
+        .summary{
+            margin-top:40px;
+            background:white;
+            padding:25px;
+            border-radius:15px;
+            text-align:center;
+            box-shadow:0px 4px 15px rgba(0,0,0,0.15);
+        }
+
+        .summary h3{
+            color:#ff9800;
+            margin-bottom:10px;
+        }
+
+        footer{
+            background:#ff9800;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:30px;
+        }
+
+        @media(max-width:768px){
+
+            nav a{
+                display:block;
+                margin:10px 0;
+            }
+
+            header h1{
+                font-size:30px;
+            }
+
+            .dashboard-cards{
+                flex-direction:column;
+                align-items:center;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>📊 Seller Dashboard</h1>
+    <p>Welcome, JEB LAUREN!</p>
+</header>
+
+<nav>
+    <a href="seller-dashboard.html">Dashboard</a>
+    <a href="manage-products.html">Products</a>
+    <a href="add-product.html">Add Product</a>
+    <a href="seller-orders.html">Orders</a>
+    <a href="seller-profile.html">Profile</a>
+    <a href="index.html">Logout</a>
+</nav>
+
+<div class="container">
+
+    <h2>Store Overview</h2>
+
+    <div class="dashboard-cards">
+
+        <div class="card">
+            <h3>📦 Total Products</h3>
+            <p class="value">25</p>
+        </div>
+
+        <div class="card">
+            <h3>🛒 Total Orders</h3>
+            <p class="value">120</p>
+        </div>
+
+        <div class="card">
+            <h3>💰 Total Sales</h3>
+            <p class="value">₱45,000</p>
+        </div>
+
+    </div>
+
+    <div class="summary">
+        <h3>📈 Sales Summary</h3>
+        <p>
+            Your store generated approximately
+            <strong>₱45,000</strong> in total sales with
+            <strong>120 completed orders</strong>.
+            Keep adding products and promoting your store
+            to increase revenue.
+        </p>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 Monkey & Banana Store | Seller Dashboard</p>
+</footer>
+
+</body>
+</html>

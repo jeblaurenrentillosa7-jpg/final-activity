@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Monkey & Banana Store</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            background:#fff9e6;
+        }
+
+        /* Header */
+        header{
+            background:linear-gradient(135deg,#ff9800,#ffd54f);
+            color:white;
+            text-align:center;
+            padding:40px;
+        }
+
+        header h1{
+            font-size:45px;
+        }
+
+        header p{
+            font-size:18px;
+        }
+
+        /* Navigation */
+        nav{
+            background:#ff9800;
+            text-align:center;
+            padding:15px;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:0 15px;
+            font-weight:bold;
+            transition:0.3s;
+        }
+
+        nav a:hover{
+            color:black;
+        }
+
+        /* Container */
+        .container{
+            width:90%;
+            margin:auto;
+            padding:20px;
+        }
+
+        /* Banner */
+        .banner{
+            background:white;
+            padding:40px;
+            text-align:center;
+            border-radius:15px;
+            margin:20px 0;
+            box-shadow:0px 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .banner h2{
+            color:#ff9800;
+            margin-bottom:10px;
+        }
+
+        .banner button{
+            margin-top:15px;
+            padding:12px 25px;
+            background:#ff9800;
+            color:white;
+            border:none;
+            border-radius:8px;
+            cursor:pointer;
+            font-size:16px;
+        }
+
+        .banner button:hover{
+            background:#e68900;
+        }
+
+        h2{
+            text-align:center;
+            color:#ff9800;
+            margin:25px 0;
+        }
+
+        /* Product Cards */
+        .products{
+            display:flex;
+            justify-content:center;
+            gap:25px;
+            flex-wrap:wrap;
+        }
+
+        .card{
+            background:white;
+            width:280px;
+            border-radius:15px;
+            overflow:hidden;
+            box-shadow:0px 4px 15px rgba(0,0,0,0.15);
+            transition:0.3s;
+            text-align:center;
+        }
+
+        .card:hover{
+            transform:translateY(-10px);
+        }
+
+        .card img{
+            width:100%;
+            height:200px;
+            object-fit:cover;
+        }
+
+        .card h3{
+            margin-top:10px;
+            color:#ff9800;
+        }
+
+        .price{
+            font-size:22px;
+            color:green;
+            font-weight:bold;
+            margin:10px 0;
+        }
+
+        .card button{
+            background:#ff9800;
+            color:white;
+            border:none;
+            width:80%;
+            padding:10px;
+            margin-bottom:15px;
+            border-radius:8px;
+            cursor:pointer;
+        }
+
+        /* Highlights */
+        .highlight-container{
+            display:flex;
+            justify-content:center;
+            flex-wrap:wrap;
+            gap:20px;
+        }
+
+        .highlight{
+            width:250px;
+            background:white;
+            padding:20px;
+            text-align:center;
+            border-radius:12px;
+            box-shadow:0px 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .highlight h3{
+            color:#ff9800;
+            margin-bottom:10px;
+        }
+
+        footer{
+            background:#ff9800;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:30px;
+        }
+
+        @media(max-width:768px){
+
+            nav a{
+                display:block;
+                margin:10px 0;
+            }
+
+            header h1{
+                font-size:30px;
+            }
+
+            .products{
+                flex-direction:column;
+                align-items:center;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🐵 Monkey & Banana Store 🍌</h1>
+    <p>The Best Banana-Themed Online Shop</p>
+</header>
+
+<nav>
+    <a href="home.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="categories.html">Categories</a>
+    <a href="cart.html">Cart</a>
+    <a href="wishlist.html">Wishlist</a>
+    <a href="orders.html">My Orders</a>
+    <a href="profile.html">Profile</a>
+    <a href="index.html">Logout</a>
+</nav>
+
+<div class="container">
+
+    <div class="banner">
+        <h2>🎉 Welcome to Monkey & Banana Store! 🎉</h2>
+        <p>Your favorite place to buy banana-themed products.</p>
+
+        <h3>🔥 Buy 2 Banana Chips and Get 1 FREE!</h3>
+
+        <button>Shop Now</button>
+    </div>
+
+    <h2>Featured Products</h2>
+
+    <div class="products">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=500" alt="Banana">
+            <h3>Golden Banana</h3>
+            <p>Fresh premium bananas</p>
+            <p class="price">₱120</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500" alt="Backpack">
+            <h3>Monkey Backpack</h3>
+            <p>Durable school backpack</p>
+            <p class="price">₱550</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1621939514649-280e2ee25f60?w=500" alt="Chips">
+            <h3>Banana Chips</h3>
+            <p>Crispy banana snacks</p>
+            <p class="price">₱85</p>
+            <button>Add to Cart</button>
+        </div>
+
+    </div>
+
+    <h2>Product Highlights</h2>
+
+    <div class="highlight-container">
+
+        <div class="highlight">
+            <h3>🍌 Fresh Products</h3>
+            <p>Freshly packed every day.</p>
+        </div>
+
+        <div class="highlight">
+            <h3>🚚 Fast Delivery</h3>
+            <p>Quick delivery nationwide.</p>
+        </div>
+
+        <div class="highlight">
+            <h3>💰 Affordable Prices</h3>
+            <p>Best quality for your budget.</p>
+        </div>
+
+        <div class="highlight">
+            <h3>⭐ Top Quality</h3>
+            <p>Customer satisfaction guaranteed.</p>
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 Monkey & Banana Store | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

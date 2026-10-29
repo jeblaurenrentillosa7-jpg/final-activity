@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Orders</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            background:#fff9e6;
+        }
+
+        /* Header */
+        header{
+            background:linear-gradient(135deg,#ff9800,#ffd54f);
+            color:white;
+            text-align:center;
+            padding:30px;
+        }
+
+        /* Navigation */
+        nav{
+            background:#ff9800;
+            text-align:center;
+            padding:15px;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:0 15px;
+            font-weight:bold;
+        }
+
+        nav a:hover{
+            color:black;
+        }
+
+        .container{
+            width:90%;
+            margin:auto;
+            padding:30px;
+        }
+
+        h2{
+            text-align:center;
+            color:#ff9800;
+            margin-bottom:25px;
+        }
+
+        table{
+            width:100%;
+            border-collapse:collapse;
+            background:white;
+            border-radius:10px;
+            overflow:hidden;
+            box-shadow:0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        th{
+            background:#ff9800;
+            color:white;
+            padding:15px;
+        }
+
+        td{
+            padding:15px;
+            text-align:center;
+            border-bottom:1px solid #ddd;
+        }
+
+        tr:hover{
+            background:#fff3cd;
+        }
+
+        .delivered{
+            color:green;
+            font-weight:bold;
+        }
+
+        .pending{
+            color:orange;
+            font-weight:bold;
+        }
+
+        .processing{
+            color:blue;
+            font-weight:bold;
+        }
+
+        footer{
+            background:#ff9800;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:30px;
+        }
+
+        @media(max-width:768px){
+
+            nav a{
+                display:block;
+                margin:10px 0;
+            }
+
+            table{
+                font-size:14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>📦 My Orders</h1>
+    <p>Track Your Recent Purchases</p>
+</header>
+
+<nav>
+    <a href="home.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="categories.html">Categories</a>
+    <a href="cart.html">Cart</a>
+    <a href="wishlist.html">Wishlist</a>
+    <a href="orders.html">My Orders</a>
+    <a href="profile.html">Profile</a>
+</nav>
+
+<div class="container">
+
+    <h2>Order History</h2>
+
+    <table>
+        <tr>
+            <th>Order Number</th>
+            <th>Status</th>
+            <th>Total Amount</th>
+        </tr>
+
+        <tr>
+            <td>ORD-1001</td>
+            <td class="delivered">Delivered</td>
+            <td>₱750</td>
+        </tr>
+
+        <tr>
+            <td>ORD-1002</td>
+            <td class="pending">Pending</td>
+            <td>₱990</td>
+        </tr>
+
+        <tr>
+            <td>ORD-1003</td>
+            <td class="processing">Processing</td>
+            <td>₱450</td>
+        </tr>
+    </table>
+
+</div>
+
+<footer>
+    <p>© 2026 Monkey & Banana Store | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

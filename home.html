@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Monkey & Banana Store</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            background:#fff9e6;
+        }
+
+        /* Header */
+        header{
+            background:linear-gradient(to right,#ff9800,#ffd54f);
+            color:white;
+            text-align:center;
+            padding:30px;
+        }
+
+        /* Navigation */
+        nav{
+            background:#ff9800;
+            text-align:center;
+            padding:15px;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:0 15px;
+            font-weight:bold;
+        }
+
+        nav a:hover{
+            color:black;
+        }
+
+        /* Container */
+        .container{
+            width:90%;
+            margin:auto;
+            padding:20px;
+        }
+
+        /* Banner */
+        .banner{
+            background:#fff3cd;
+            padding:30px;
+            text-align:center;
+            border-radius:10px;
+            margin:20px 0;
+        }
+
+        /* Product Cards */
+        .products{
+            display:flex;
+            justify-content:center;
+            gap:20px;
+            flex-wrap:wrap;
+        }
+
+        .card{
+            background:white;
+            width:250px;
+            padding:15px;
+            border-radius:10px;
+            box-shadow:0 2px 10px rgba(0,0,0,0.2);
+            text-align:center;
+        }
+
+        .card img{
+            width:100%;
+            border-radius:10px;
+        }
+
+        .card h3{
+            margin:10px 0;
+            color:#ff9800;
+        }
+
+        /* Highlights */
+        .highlights{
+            margin-top:30px;
+        }
+
+        .highlights ul{
+            list-style:none;
+        }
+
+        .highlights li{
+            background:white;
+            margin:10px 0;
+            padding:15px;
+            border-radius:10px;
+            box-shadow:0 2px 5px rgba(0,0,0,.1);
+        }
+
+        h2{
+            margin:20px 0;
+            color:#ff9800;
+        }
+
+        @media(max-width:768px){
+            .products{
+                flex-direction:column;
+                align-items:center;
+            }
+
+            nav a{
+                display:block;
+                margin:10px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🐵 Monkey & Banana Store 🍌</h1>
+    <p>The Best Banana-Themed Online Shop</p>
+</header>
+
+<nav>
+    <a href="home.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="categories.html">Categories</a>
+    <a href="cart.html">Cart</a>
+    <a href="wishlist.html">Wishlist</a>
+    <a href="orders.html">My Orders</a>
+    <a href="profile.html">Profile</a>
+    <a href="index.html">Logout</a>
+</nav>
+
+<div class="container">
+
+    <div class="banner">
+        <h2>🎉 Welcome to Monkey & Banana Store! 🎉</h2>
+        <p>Your favorite place to buy banana-themed products.</p>
+
+        <h3>Special Promotion</h3>
+        <p>Buy 2 Banana Chips and Get 1 FREE!</p>
+    </div>
+
+    <h2>Featured Products</h2>
+
+    <div class="products">
+
+        <div class="card">
+            <img src="https://via.placeholder.com/200" alt="Banana">
+            <h3>Golden Banana</h3>
+            <p>₱120</p>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/200" alt="Backpack">
+            <h3>Monkey Backpack</h3>
+            <p>₱550</p>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/200" alt="Banana Chips">
+            <h3>Banana Chips</h3>
+            <p>₱85</p>
+        </div>
+
+    </div>
+
+    <div class="highlights">
+        <h2>Product Highlights</h2>
+
+        <ul>
+            <li>🍌 Fresh Products Daily</li>
+            <li>🚚 Fast Delivery Nationwide</li>
+            <li>💰 Affordable Prices</li>
+            <li>⭐ High Quality Banana Products</li>
+        </ul>
+    </div>
+
+</div>
+
+</body>
+</html>
